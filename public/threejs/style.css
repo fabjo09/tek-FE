@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    font-family: Arial, sans-serif;
+}
+
+#scene-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    display: block; /* Remove default inline spacing */
+}
+
+#navigation-ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+#navigation-ui h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+}
+
+#navigation-ui button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 12px;
+}
+
+#navigation-ui button:hover {
+    background-color: #555;
+}
+
+#navigation-ui button:last-child {
+    margin-bottom: 0;
+}
+
+#room-info-overlay {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+#room-info-overlay.hidden {
+    display: none;
+}
+
+/* Styles for CSS2DRenderer labels */
+.label {
+    color: #FFF;
+    font-family: sans-serif;
+    padding: 2px 5px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    font-size: 10px;
+    white-space: nowrap; /* Prevent wrapping */
+}
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive 3D Campus Tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container for the 3D scene -->
+    <div id="scene-container"></div>
+
+    <!-- Navigation UI -->
+    <div id="navigation-ui">
+        <h3>Campus Navigation</h3>
+        <button id="btn-corridor">Go to Corridor</button>
+        <button id="btn-reception">Go to Reception</button>
+        <button id="btn-classroom">Go to Classroom</button>
+        <button id="btn-library">Go to Library</button>
+        <button id="btn-cafeteria">Go to Cafeteria</button>
+    </div>
+
+    <!-- Optional: Room Info Overlay (can be triggered by camera arrival) -->
+    <div id="room-info-overlay" class="hidden">
+        <h2 id="room-name">Room Name</h2>
+        <p id="room-description">Room description goes here.</p>
+    </div>
+
+    <!-- Import Tween.js for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.3/tween.umd.js"></script>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.163.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.163.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
